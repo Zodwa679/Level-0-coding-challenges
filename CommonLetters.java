@@ -19,7 +19,7 @@ public static void findCommonChars(String string1, String string2){
             };
         }
     }
-    System.out.print("common characters:" + " ");
+    System.out.print("Common letters:");
     
     System.out.print(commonLetter);
 }
