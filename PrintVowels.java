@@ -17,11 +17,12 @@ public class PrintVowels {
 public static void findVowels(String string){
 	String input = uniqueCharacters(string);
 	String prefix = "";
-	String outPut = "";		
+	String outPut = "";	
+	System.out.print("Vowels: ");
 	for (int i = 0; i < input.length(); i++) {
 			if (input.charAt(i) == 'a' || input.charAt(i) == 'e' || input.charAt(i) == 'i' || input.charAt(i) == 'o'|| input.charAt(i) == 'u') {
 				outPut = prefix + input.charAt(i);
-				prefix = ",";
+				prefix = ", ";
 				System.out.print(outPut);
 			}	
 		}
