@@ -1,6 +1,6 @@
 public class ConvertNumberToTime {
     public static void main(String args[]) {
-        System.out.println(convertNumberTime(71));
+        System.out.println(convertNumberTime(62));
 }
 public static StringBuilder convertNumberTime(int number){
     int minutes = number % 60;
@@ -12,10 +12,7 @@ public static StringBuilder convertNumberTime(int number){
    StringBuilder minuteText = new StringBuilder().append(minutes).append(' ').append(minutepluralCheck);
    StringBuilder hourText = new StringBuilder().append(hours).append(' ').append(hourPluralCheck);
 
-   if(hours == 0) {
-         return   minuteText; 
-    }
-    else if(minutes == 0){
+    if(minutes == 0){
         return hourText;
     }
    else {
